@@ -5,7 +5,7 @@
 * @description <b> BatchSObjectFeeder </b>
 * <p>This class implements an Iterator through SObjects.
 * Iterator is actually a FIFO
-* 
+* </p>
 */
 
 global class BatchSObjectFeeder implements Iterator<SObject>, Iterable<SObject> {

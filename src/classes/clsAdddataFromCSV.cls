@@ -1,12 +1,22 @@
-///////////////////////////////////////////////////////////////////
-//Type : Apex Class
-//Name : clsAdddataFromCSV
-//Company :
-//Created By :
-//Last Modified By :
-///////////////////////////////////////////////////////////////////
+/**
+* @author Somebody but doc from Thierry Jorand
+* @date 2014
+*
+* @description <b> clsAdddataFromCSV </b>
+* <p>This class parses a CSV file and returns a list of rows as a list of fields
+* </p>
+* 
+*
+* @see clsAdddataFromCSV
+*/
 global class clsAdddataFromCSV{
 
+/**
+* @description parseCSV : checks and accepts the file name for non empty files
+* @param strCSV content of the csv file
+* @param skipHeaders if true the first line of headers is not returned
+* @return nothing
+*/ 
 	public static List<List<String>> parseCSV(String contents,Boolean skipHeaders) {
 		system.debug('***** Showed Up Here clsAdddataFromCSV ' + skipHeaders + contents );
 		List<List<String>> allFields = new List<List<String>>();

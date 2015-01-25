@@ -4,7 +4,7 @@
 *
 * @description <b> BatchProcessor </b>
 * <p>This class implements the batch processor.
-* 
+* </p>
 * 
 * @see BatchSObjectFeeder to get
 * @see ctrlAdddataFromCSV
@@ -54,7 +54,7 @@ global String strCSVContent;
 	public void execute(Database.BatchableContext bc, SObject[] scope) {
 		//insert scope;
 		System.Debug('Batch processor : It Came in Execute :' + bc.getJobId());
-		ctrlAdddataFromCSV.InsertValues(BC.getJobId(),strCSVContent );
+		ctrlAdddataFromCSV.InsertValues(strCSVContent );
 	}
 
 /**

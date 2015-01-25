@@ -1,19 +1,24 @@
-////////////////////////////////////////////////////////////////////
-//Type : Apex Class
-//Name : ctrlAdddataFromCSV
-//Company :
-//Created By :
-//Last Modified By :
-///////////////////////////////////////////////////////////////////
+/**
+* @author Somebody but doc from Thierry Jorand
+* @date 2014
+*
+* @description <b> ctrlAdddataFromCSV </b>
+* <p>This class collects the data read in clsAddDataFromCSV and updates SF records.
+* </p>
+* 
+* @see BatchProcessor
+* @see clsAdddataFromCSV
+*/
+
 public class ctrlAdddataFromCSV{
-	// constructor
-	public ctrlAdddataFromCSV(){
-	}
 
-String[] filelines = new String[]{};
-List<Account> accstoupload;
+/**
+* @description InsertValues : checks and accepts the file name for non empty files
+* @param strCSV contenet of the csv file
+* @return nothing
+*/ 
 
-	public static void InsertValues(string strBatchId,string strCSV)
+	public static void InsertValues(string strCSV)
 	{
 	System.debug('&&&&& ctrlAdddataFromCSV strCSV\n' + strCSV );
 	List<Id> idList = new List<Id>();
