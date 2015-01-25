@@ -1,0 +1,5 @@
+sourceDir=K:\Devs\Kepler64SR2Workspace\CSVParsing/src/classes
+destDir=K:\Devs\Kepler64SR2Workspace\CSVParsing
+homeFile=K:\Devs\Kepler64SR2Workspace\CSVParsing\home.html
+authorFile=K:\Devs\Kepler64SR2Workspace\CSVParsing\AuthorFile
+scope=public,global,webservice

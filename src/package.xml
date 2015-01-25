@@ -5,8 +5,13 @@
         <members>BatchSObjectFeeder</members>
         <members>clsAdddataFromCSV</members>
         <members>ctrlAdddataFromCSV</members>
+        <members>ctrlUpdateAllRecFromCSV</members>
         <members>ctrlUpdateallrecFromCSV</members>
         <name>ApexClass</name>
+    </types>
+    <types>
+        <members>BatchUpdateLeads</members>
+        <name>ApexPage</name>
     </types>
     <version>31.0</version>
 </Package>

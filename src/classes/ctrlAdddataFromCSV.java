@@ -15,7 +15,7 @@ List<Account> accstoupload;
 
 	public static void InsertValues(string strBatchId,string strCSV)
 	{
-	System.debug('&&&&& ctrlAdddataFromCSV strCSV\n' + strCSV );
+	System.debug('&&&&& ctrlAdddataFromCSV strCSV ' + strCSV );
 	List<Id> idList = new List<Id>();
 	Map<String,string> map1 = new Map<string,string>();
 	Map<String,string> map2 = new Map<string,string>();
@@ -36,8 +36,8 @@ List<Account> accstoupload;
 		idList.add(Id.valueOf(e1[0]));
 	}
 	system.debug('&&&&& ' + idList);
-	system.debug('########## ' + map1.get('00QF000000hgaKlMAI'));
-	system.debug('&&&&&&&&&& ' + map2.get('00QF000000hgaKlMAI'));
+	system.debug('########## ' + map1.get('00QK0000003Te6F'));
+	system.debug('&&&&&&&&&& ' + map2.get('00QK0000003Te6F'));
 	List<Lead> updateLeads = new List<Lead>();
 	integer i=0;
 	for(Lead le:[select id,Name,Company,Raw_Data_Source__c,Site_Feasible_For_Solar__c,Operator_Name__c from Lead where id IN:idList]){
