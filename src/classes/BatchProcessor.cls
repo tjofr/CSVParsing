@@ -12,7 +12,7 @@
 
 global class BatchProcessor implements Database.batchable<SObject>,Database.AllowsCallouts {
 /**
-* @description name of the csv file to uploaded 
+* @description List of objects to be updated
 */
 SObject[] source;
 /**
@@ -34,9 +34,9 @@ global String strCSVContent;
 	}
 
 /**
-* @description Start the batch
+* @description Iterable which sends to the batch the objects to be updated
 * @param source Batch context
-* @return nothing
+* @return Iterable
 */ 
 	global Iterable<SObject> start(Database.BatchableContext bc) {
 		BatchSObjectFeeder bf = new BatchSObjectFeeder(source);
